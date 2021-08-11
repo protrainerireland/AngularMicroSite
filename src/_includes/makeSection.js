@@ -39,7 +39,6 @@ module.exports = {
                 section.items.forEach(item=>{
                     html += `<div class="col-md-4 services">
                                 <img src="${ item.image }" class="service-img"   alt="">
-                                <h4>${ item.title }</h4>
                                 <p>${ item.text }</p>
                             </div>`;
 
