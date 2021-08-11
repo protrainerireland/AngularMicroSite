@@ -22,20 +22,17 @@
             "title": "Services", 
             "type": "grid", 
             "items":[
-                {
-                    "title": "Landing Page Development", 
+                { 
                     "text": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.", 
                     "image": "/svg/Design collaboration.svg", 
                     "link": "" 
                 }, 
-                {
-                    "title": "Online Branding", 
+                { 
                     "text": "The Angular community is split between AngularJS (released in 2010) and modern Angular (starting with Angular 2 in 2016). The new framework is called Angular, as opposed to the old AngularJS 1.x version.", 
                     "image": "/svg/branding.svg", 
                     "link": ""
                 }, 
-                {
-                    "title": "Google Ads", 
+                { 
                     "text": "Angular framework in its modern form includes versions from 2 to the most recent one – Angular 9, which was introduced in February 2020.", 
                     "image": "/svg/ads.svg", 
                     "link": ""
