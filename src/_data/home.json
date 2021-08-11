@@ -24,38 +24,21 @@
             "items":[
                 {
                     "title": "Landing Page Development", 
-                    "text": "lorem ipsum", 
+                    "text": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.", 
                     "image": "/svg/Design collaboration.svg", 
                     "link": "" 
                 }, 
                 {
                     "title": "Online Branding", 
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                    "text": "The Angular community is split between AngularJS (released in 2010) and modern Angular (starting with Angular 2 in 2016). The new framework is called Angular, as opposed to the old AngularJS 1.x version.", 
                     "image": "/svg/branding.svg", 
                     "link": ""
                 }, 
                 {
                     "title": "Google Ads", 
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                    "text": "Angular framework in its modern form includes versions from 2 to the most recent one – Angular 9, which was introduced in February 2020.", 
                     "image": "/svg/ads.svg", 
                     "link": ""
-                }, 
-                {
-                    "title": "PPC", 
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "image": "/svg/undraw_Savings_dwkw.svg", 
-                    "link": ""
-                }, 
-                {
-                    "title": "Social Media",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                    "image": "/svg/Social dilemma.svg", 
-                    "link": ""
-                }, 
-                {
-                    "title": "SEO", 
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
-                    "image": "/svg/Code Version Control.svg"
                 }
             ] 
         }, 
@@ -66,14 +49,12 @@
             "title": "About", 
             "type": "listwithimage", 
             "content":{
-                "title": "Odio sed id eos et laboriosam consequatur eos earum soluta.", 
+                "title": "Angular belongs to the so-called MEAN stack. The acronym describes four technologies that cover major software product development aspects.", 
                 "list":[
-                    "Sint aliquam consequatur ex ex labore.", 
-                    "Duis aute irure dolor in reprehenderit in voluptate velit.", 
-                    "Aspernatur consectetur omnis numquam quaerat.", 
-                    "Et vel ut quidem alias veritatis repudiandae ut fugit.", 
-                    "Fugit ut maxime incidunt accusantium totam repellendus eum error.", 
-                    "Ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    "M – MongoDB, NoSQL (non-relational) database", 
+                    "E – Express, back-end middleware", 
+                    "A – Angular, front-end framework", 
+                    "N – Node.js, runtime environment."
                 ], 
                 "image": "svg/undraw_mobile_marketing_iqbr.svg"
             }
