@@ -1,8 +1,7 @@
 {
-    "searchKeywords": ["angular"],
+    "searchKeywords": ["Angular"],
     "organisation": {
-        "name": "AngularTraining.ie",
-        "keyword": "Angular"
+        "name": "AngularTraining.ie"
 
     },
     "url": "angulartraining.ie",

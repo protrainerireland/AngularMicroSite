@@ -29,58 +29,32 @@
             }
         },
         {
-            "id": "services", 
-            "link": "/#services", 
-            "text": "Services", 
-            "title": "Services", 
-            "type": "grid", 
-            "items":[
-                { 
-                    "text": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.", 
-                    "image": "/svg/singlepageapp.svg", 
-                    "link": "" 
-                }, 
-                { 
-                    "text": "The Angular community is split between AngularJS (released in 2010) and modern Angular (starting with Angular 2 in 2016). The new framework is called Angular, as opposed to the old AngularJS 1.x version.", 
-                    "image": "/svg/Design collaboration.svg", 
-                    "link": ""
-                }, 
-                { 
-                    "text": "Angular framework in its modern form includes versions from 2 to the most recent one – Angular 9, which was introduced in February 2020.", 
-                    "image": "/svg/devfocus.svg", 
-                    "link": ""
-                }
-            ] 
-        },
-        {
-            "id": "keywordtext",
-            "link": "/#text", 
-            "text": "Info", 
-            "title": "Info", 
-            "type": "keywordtext",
+            "id": "about",
+            "link": "/#about", 
+            "text": "About Angular", 
+            "title": "About Angular", 
+            "type": "about",
             "image": "/svg/Code Version Control.svg", 
             "imagePosition": "right",
             "content":{
-                "title": "hello"
+                "title": "About Angular...",
+                "textFirst": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.",
+                "textSecond": "The Angular community is split between AngularJS (released in 2010) and modern Angular (starting with Angular 2 in 2016). The new framework is called Angular, as opposed to the old AngularJS 1.x version.",
+                "textThird": "Angular framework in its modern form includes versions from 2 to the most recent one – Angular 9, which was introduced in February 2020."
             }
         },
         {
-            "id": "about",
-            "link": "/#about", 
-            "text": "About", 
-            "title": "About", 
-            "type": "listwithimage", 
+            "id": "summary",
+            "link": "/#summary", 
+            "text": "Why Attend?", 
+            "title": "Why Attend?", 
+            "type": "keywordtext",
+            "image": "", 
+            "imagePosition": "right",
             "content":{
-                "title": "Angular belongs to the so-called MEAN stack. The acronym describes four technologies that cover major software product development aspects.", 
-                "list":[
-                    "M – MongoDB, NoSQL (non-relational) database", 
-                    "E – Express, back-end middleware", 
-                    "A – Angular, front-end framework", 
-                    "N – Node.js, runtime environment."
-                ], 
-                "image": "img/meanstack.png"
+                "title": "Why attend one of our Angular courses?"
             }
-        }, 
+        },
         {
             "id": "testimonials", 
             "link": "/#testimonials", 
