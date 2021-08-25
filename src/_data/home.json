@@ -11,10 +11,23 @@
             "link": "no", 
             "type": "banner", 
             "title": "Angular Training Courses Ireland", 
-            "subtitle": "Contact Us for all your Angular training requirements", 
+            "subtitle": "Contact us for all your Angular training requirements", 
             "background": "img/ground@-min.png",
             "image": "svg/onlineclass.svg"
-        }, 
+        },
+        {
+            "id": "welcome",
+            "link": "/#welcome",
+            "text": "Welcome",
+            "title": "Welcome",
+            "type": "welcome",
+            "image": "/svg/Code Version Control.svg",
+            "imagePosition": "right",
+            "content":{
+                "title": "Angular",
+                "text": "Angular"
+            }
+        },
         {
             "id": "services", 
             "link": "/#services", 
