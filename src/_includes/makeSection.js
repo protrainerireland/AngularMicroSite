@@ -46,7 +46,8 @@ module.exports = {
                     <div class="row ${section.imagePosition=="left" ? "flex-row-reverse" :""}">
                         <div class="${section.image ? 'col-md-6' : 'col-md-12'} about">
                         <p class="about-title">${ section.content.title }</p>
-                        <p>${ section.content.text }</p>
+                        <p>${ section.content.textFirst }</p>
+                        <p>${ section.content.textSecond }</p>
                         </div>`;
                     if (section.image) {
                         html += `<div class="col-md-6">
@@ -144,7 +145,7 @@ module.exports = {
                 </section>`;
                 break;
             case 'quotes':
-                let quotes = section.content.quotes.map(quote => `<div class="col-md-5 testimonials">
+                let quotes = section.content.quotes.map(quote => `<div class="col-md-12 testimonials">
                     <p class="feedback">"${quote.text}"</p>
                     <img src="${quote.image}"  alt="">
                     <p class="user-details"><b>${quote.name}</b></p>

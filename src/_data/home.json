@@ -25,7 +25,8 @@
             "imagePosition": "right",
             "content":{
                 "title": "Angular",
-                "text": "Angular"
+                "textFirst": "Angular is a large framework and it can be intimidating to get started with because it uses both a new language, Typescript, and has a large range of concepts that need to be understood before you can get started. Our courses provide the perfect introduction for people who have worked with web applications who are embarking on a project that requires Angular.  Our follow-on courses cover the more advanced but widely used features and techniques that Angular has to offer to take your Angular development skills to the next level.",
+                "textSecond": "We provide training on both the original 'Angular.js' and the completely rewritten 'Angular' which refers to versions 2 and above."
             }
         },
         {
@@ -59,19 +60,15 @@
             "id": "testimonials", 
             "link": "/#testimonials", 
             "text": "Testimonials", 
-            "type": "quotes", 
+            "type": "quotes",
+            "quantity": "1", 
             "content": {
                 "title": "Testimonials", 
                 "quotes":[
                     {
-                        "name": "Carol",  
+                        "name": "Learning & Development Manager",  
                         "image": "/img/testimonials/man.png", 
-                        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
-                    }, 
-                    {
-                        "name": "Fred",
-                        "image": "/img/testimonials/man2.png", 
-                        "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        "text": "Our participants noted that there were lots of coding examples used and the trainer explained examples well and paused where participants had issues. We really got through a lot in a week. We will definitely be booking further programmes for our graduate programmes."
                     }
                 ]
             }
