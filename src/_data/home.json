@@ -40,8 +40,8 @@
             "content":{
                 "title": "About Angular...",
                 "textFirst": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.",
-                "textSecond": "The Angular community is split between AngularJS (released in 2010) and modern Angular (starting with Angular 2 in 2016). The new framework is called Angular, as opposed to the old AngularJS 1.x version.",
-                "textThird": "Angular framework in its modern form includes versions from 2 to the most recent one – Angular 9, which was introduced in February 2020."
+                "textSecond": "The Angular community is split between AngularJS (released in 2010) and modern Angular (starting with Angular 2 in 2016). The new framework is called Angular, as opposed to the old AngularJS 1.x version."
+                
             }
         },
         {
@@ -68,7 +68,7 @@
                     {
                         "name": "Learning & Development Manager",  
                         "image": "/img/testimonials/man.png", 
-                        "text": "Our participants noted that there were lots of coding examples used and the trainer explained examples well and paused where participants had issues. We really got through a lot in a week. We will definitely be booking further programmes for our graduate programmes."
+                        "text": "Our participants noted that there were lots of coding examples used and the trainer explained examples well and paused where participants had issues. We really got through a lot in a week. We will definitely be booking further courses for our graduate programmes."
                     }
                 ]
             }

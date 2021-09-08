@@ -79,7 +79,7 @@ module.exports = {
                 break;
             case "keywordtext":
                 
-                let defaultTemplate = `${site.searchKeywords[0]} is one of the most popular coding languages in the world. The job market for ${ site.searchKeywords[0] } developers is robust and consistent, making it a great programming language to learn. Our courses can give you the skills you need to work effectively with ${ site.searchKeywords[0] }.  Why attend one of our ${ site.searchKeywords[0] } courses? If you're interested working effectively with ${ site.searchKeywords[0] } to benefit your organisation and to get an edge over your competitors, or simply to learn a highly lucrative skill then you should consider our <a href = /courses >${ site.searchKeywords[0] } training courses.</a></p>`
+                let defaultTemplate = `${site.searchKeywords[0]} is one of the most popular coding languages in the world. The job market for ${ site.searchKeywords[0] } developers is robust and consistent, making it a great programming language to learn. Our courses can give you the skills you need to work effectively with ${ site.searchKeywords[0] }.  Why attend one of our ${ site.searchKeywords[0] } courses? If you're interested in working effectively with ${ site.searchKeywords[0] } to benefit your organisation and to get an edge over your competitors, or simply to learn a highly lucrative skill then you should consider our <a href = /courses >${ site.searchKeywords[0] } training courses.</a></p>`
                 
                 html = `<section id="${section.id}" class="section">
                     <div class="container">
@@ -109,7 +109,6 @@ module.exports = {
                         <p class="about-title">${ section.content.title }</p>
                         <p>${ section.content.textFirst }</p>
                         <p>${ section.content.textSecond }</p>
-                        <p>${ section.content.textThird }</p>
                         </div>`;
                     if (section.image) {
                         html += `<div class="col-md-6">
