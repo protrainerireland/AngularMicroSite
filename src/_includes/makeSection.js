@@ -215,7 +215,7 @@ module.exports = {
                 </section>`;
                 break;
             case 'quotes':
-                let quotes = section.content.quotes.map((quote, index) => `<div class="col-md-5 testimonials" data-aos="fade-left" data-aos-delay="${ site.animation.delay * (index + 1) }" ${animationOffset}>
+                let quotes = section.content.quotes.map((quote, index) => `<div class="col-md-12 testimonials" data-aos="fade-left" data-aos-delay="${ site.animation.delay * (index + 1) }" ${animationOffset}>
                     <p class="feedback">"${quote.text}"</p>
                     <img src="${quote.image}"  alt="">
                     <p class="user-details"><b>${quote.name}</b></p>
