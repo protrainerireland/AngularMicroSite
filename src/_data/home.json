@@ -20,13 +20,15 @@
             "link": "/#welcome",
             "text": "Welcome",
             "title": "Welcome",
-            "type": "welcome",
+            "type": "keywordtext",
             "image": "/svg/Code Version Control.svg",
             "imagePosition": "right",
             "content":{
-                "title": "Angular",
-                "textFirst": "Angular is a large framework and it can be intimidating to get started with because it uses both a new language, Typescript, and has a large range of concepts that need to be understood before you can get started. Our courses provide the perfect introduction for people who have worked with web applications who are embarking on a project that requires Angular.  Our follow-on courses cover the more advanced but widely used features and techniques that Angular has to offer to take your Angular development skills to the next level.",
-                "textSecond": "We provide training on both the original 'Angular.js' and the completely rewritten 'Angular' which refers to versions 2 and above."
+                "title": "Take your Angular development skills to the next level...",
+                "text":[ 
+                "Angular is a large framework and it can be intimidating to get started with because it uses both a new language, Typescript, and has a large range of concepts that need to be understood before you can get started. Our courses provide the perfect introduction for people who have worked with web applications who are embarking on a project that requires Angular.  Our follow-on courses cover the more advanced but widely used features and techniques that Angular has to offer to take your Angular development skills to the next level.",
+                "We provide training on both the original 'Angular.js' and the completely rewritten 'Angular' which refers to versions 2 and above."
+                ]
             }
         },
         {
@@ -34,14 +36,15 @@
             "link": "/#about", 
             "text": "About Angular", 
             "title": "About Angular", 
-            "type": "about",
+            "type": "keywordtext",
             "image": "/svg/devfocus.svg", 
             "imagePosition": "right",
             "content":{
                 "title": "About Angular...",
-                "textFirst": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.",
-                "textSecond": "The Angular community is split between AngularJS (released in 2010) and modern Angular (starting with Angular 2 in 2016). The new framework is called Angular, as opposed to the old AngularJS 1.x version."
-                
+                "text":[
+                "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your apps.",
+                "The Angular community is split between AngularJS (released in 2010) and modern Angular (starting with Angular 2 in 2016). The new framework is called Angular, as opposed to the old AngularJS 1.x version."
+                ]
             }
         },
         {
@@ -49,7 +52,7 @@
             "link": "/#summary", 
             "text": "Why Attend?", 
             "title": "Why Attend?", 
-            "type": "keywordtext",
+            "type": "summary",
             "image": "", 
             "imagePosition": "right",
             "content":{
