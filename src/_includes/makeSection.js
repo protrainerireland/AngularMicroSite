@@ -132,11 +132,7 @@ module.exports = {
                         <img src="${ section.background }" class="bottom-img" alt="">
                     </section>`;
                 break;
-
-<<<<<<< HEAD
             
-=======
->>>>>>> 634e9d4250f128e90eddcb1ee681868dff8e763e
             case "keywordtext":
 
                 try {
