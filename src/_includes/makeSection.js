@@ -180,40 +180,14 @@ module.exports = {
                     </section>`;
                 break;
 
-            case "welcome":
-                html = `<section id="${section.id}" class="section">
-                    <div class="container">
-                    <h3 class="title text-center">${ section.title }</h3>
-                    <div class="row ${section.imagePosition=="left" ? "flex-row-reverse" :""}">
-                        <div class="${section.image ? 'col-md-6' : 'col-md-12'} about"
-                        data-aos="fade-left" ${ animationDelay } ${animationOffset}
-                        data-aos-anchor="#${section.id}">
-                        <p class="about-title">${ section.content.title }</p>
-                        
-                        ${ text }
-
-                        </div>`;
-                    if (section.image) {
-                        html += `<div class="col-md-6"
-                                data-aos="fade-right" ${ animationDelay }  ${animationOffset}
-                                data-aos-anchor="#${section.id}"
-                                >
-                                    <img src="${ section.image }" class="img-fluid" alt="">
-                                </div>`;
-                    }    
-
-                html += `</div>
-                    </div>
-                </section>`;
-                break;
-
+            
             case "keywordtext":
 
                 try {
                     list = `<ul>${section.content.list.map(item=>`<li>${item}</li>`).join("")}</ul>`;
                     } catch(error) {
                         list = `<ul></ul>`;
-                        console.log(`***** metadata error section.content.list is missing - listwithimage *****`);
+                        console.log(`***** metadata error section.content.list is missing - keywordtext *****`);
                     }    
 
                 try {
@@ -221,9 +195,11 @@ module.exports = {
 
                 } catch(error) {
                     text = `<ul></ul>`;
-                    console.log(`***** metadata error section.content.list is missing - keywordtext *****`);  
+                    console.log(`***** metadata error section.content.text is missing - keywordtext *****`);  
 
                 }
+
+                
                 
                 html = `<section id="${section.id}" class="section">
                     <div class="container">
