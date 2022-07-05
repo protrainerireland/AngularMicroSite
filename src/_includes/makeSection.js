@@ -27,7 +27,6 @@ function slugify (str, replaceFullStops) {
     str = str.replace(/\s+/g, '-') // collapse whitespace and replace by -
         .replace(/-+/g, '-'); // collapse dashes
 
-    //console.log(`slugged:${str}`);
     return str;
 
 }
@@ -53,14 +52,9 @@ module.exports = {
             return result;
         }, {});
 
-        //console.log("******************************");
-        //console.log(topics);
-        //console.log("******************************");
-
         let cards = Object.keys(topics).map((topicName, index) => {
-            //console.log(topicName);
+           
             let topic = topics[topicName];
-            //console.log(topic);
 
             let courses = topic.map(course=>{
                 return `<div><a href="/saved_searches/${slugify(course.location)}/${slugify(course.keyword)}/${slugify(course.title)}.html">${course.title}</a></div>`;
@@ -81,15 +75,12 @@ module.exports = {
                             </div>
                         </div>`;
             return card;
-
             
         });
         let accordion = `<div class="accordion" id="savedSearchAccordion">    
                 ${cards.join("")}
         </div>`;
 
-        
-    
         html = `<section id="savedsearches" class="section">
                     <div class="container">
                         <div class="col">
@@ -122,45 +113,7 @@ module.exports = {
                             <p>${section.content}</p>
                         </section>`;
                 break;
-            case 'placeholder':
-                html = ``;
-                break;
-
-            case "embeddedsvg":
-                html = `<section id="${section.id}" class="section">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col center-block text-center">
-                                        <h1>${section.title}</h1>
-                                        <img src="${section.content.image}">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                `;
-                break;
-
-            case "inlinesvg": 
-
-                // open the svg file and put it inline into the html
-                let svg = fs.readFileSync(path.resolve(__dirname, `../../build/${section.content.image}`));
-
-                console.log(svg);
-
-                html = `<section id="${section.id}" class="section">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col center-block text-center">
-                                        <h1>${section.title}</h1>
-                                        <!--<img src="${section.content.image}">-->
-                                        ${svg}
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                `;
-                break;
-
+            
             case 'banner':
 
                 html = `<section class="section banner">
@@ -180,7 +133,10 @@ module.exports = {
                     </section>`;
                 break;
 
+<<<<<<< HEAD
             
+=======
+>>>>>>> 634e9d4250f128e90eddcb1ee681868dff8e763e
             case "keywordtext":
 
                 try {
@@ -243,10 +199,10 @@ module.exports = {
 
                 } catch(error) {
                     text = `<ul></ul>`;
-                    console.log(`***** metadata error section.content.list is missing - keywordtext *****`);  
+                    console.log(`***** metadata error section.content.text is missing - summary *****`);  
 
                 }
-
+                
                 html = `<section id="${section.id}" class="section">
                     <div class="container">
                     <h3 class="title text-center">${ section.title }</h3>
