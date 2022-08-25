@@ -24,13 +24,14 @@ function getInstanceDateInfo(strDate, duration) {
     return {
         startDate:`${startDate.toISOString()}`, 
         endDate:`${endDate.toISOString()}`, 
-        duration:`${duration}D`
+        duration:`P${duration}D`
     }
 }
 
 function getLocationInfo(instance, course) {
 
     let location = {
+        
     };
 
     let filename = slugify(course.name);
@@ -38,6 +39,7 @@ function getLocationInfo(instance, course) {
     if (instance.location == 'Online') {
         location["@type"] = "VirtualLocation";
         location.url = `https://professional.ie/course_schedule/${filename}.html?id=${instance.id}`;
+        
     } else {
 
         
@@ -117,13 +119,22 @@ module.exports = function(config) {
                     description: `${makeSafeForJson(course.descrip)}`, 
                     id: instance.id , 
                     ...getInstanceDateInfo(instance.date, course.durationDays), 
+                    eventStatus: "https://schema.org/EventScheduled", 
+                    eventAttendanceMode: `https://schema.org/${instance.location == 'Online' ? "OnlineEventAttendanceMode" : "OfflineEventAttendanceMode"}`;
                     offers: {
                         "@type": "Offer", 
                         "url":`https://professional.ie/course_schedule/${filename}.html?id=${instance.id}`, 
                         "priceCurrency": "EUR", 
-                        "price": `${course.cost}`
+                        "price": `${course.cost}`, 
+                        "availability": "https://schema.org/InStock",
+                        "validFrom": `${new Date().getFullYear()}-01-01T12:00`
                     }, 
-                    ...getLocationInfo(instance, course)
+                    ...getLocationInfo(instance, course), 
+                    "organizer": {
+                        "@type": "Organization", 
+                        "name": "Professional Training", 
+                        "url": "www.professional.ie"
+                    }
                     
                 }
                 return JSON.stringify(metadata);
