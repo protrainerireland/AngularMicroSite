@@ -1,4 +1,5 @@
 let branding = require('./src/_data/branding.json');
+let site = require('./src/_data/site.json');
 let fs = require('fs');
 let { makeSection, slugify, asAccordion } = require('./src/_includes/makeSection');
 
@@ -45,13 +46,27 @@ function getLocationInfo(instance, course) {
         
         location["@type"] = 'Place';
         location.sameAs = "https://professional.ie";
-        location.name = `Professional Training ${instance.location}`
+        location.name = `Professional Training ${instance.location}`;
 
+        if (instance.location == "Dublin") {
+            location.address = {
+                "@type" : "PostalAddress",
+                "streetAddress" : "Unit 22, Westland Square, Pearse Street",
+                "addressRegion" : "Dublin 2",
+                "postalCode" : "D02 W102"
+            }
+        } else {
+            location.address = {
+                "@type": "PostalAddress", 
+                "streetAddress" : "Unit E, Building 6500, Cork Airport Business Park", 
+                "addressRegion" : "Cork", 
+                "postalCode": "T12 TP8H"
+            }
+        }
     }
-
     return {location};
-
 }
+
 module.exports = function(config) {
 
     /* config.addFilter("makeSection", function(content) {
@@ -116,9 +131,9 @@ module.exports = function(config) {
                 let metadata = {
                     "@context":"http://schema.org", 
                     "@type": "EducationEvent", 
-                    name: "course.name", 
+                    name: `${ course.name }`, 
+                    image: `${site.url}${site.logo}`, 
                     description: `${makeSafeForJson(course.descrip)}`, 
-                    id: instance.id , 
                     ...getInstanceDateInfo(instance.date, course.durationDays), 
                     eventStatus: "https://schema.org/EventScheduled", 
                     eventAttendanceMode: `https://schema.org/${instance.location == 'Online' ? "OnlineEventAttendanceMode" : "OfflineEventAttendanceMode"}`,
