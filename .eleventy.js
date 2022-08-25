@@ -114,6 +114,7 @@ module.exports = function(config) {
                 break;
             case "metadata":
                 let metadata = {
+                    "@context":"http://schema.org", 
                     "@type": "EducationEvent", 
                     name: "course.name", 
                     description: `${makeSafeForJson(course.descrip)}`, 
