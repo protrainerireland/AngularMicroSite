@@ -3,10 +3,10 @@
     "searchLocations": ["Dublin", "Cork", "Limerick", "Ireland"],
     "homepageTitle": "Training Courses - Dublin Cork Limerick Ireland", 
     "organisation": {
-        "name": "AngularTraining.ie"
-
+        "name": "Professional Training Solutions Ltd" , 
+        "department": "Angular Training"
     },
-    "url": "angulartraining.ie",
+    "url": "https://angulartraining.ie",
     "logo": "/img/angularlogo.png",
     "address": {
         "line1": "Building 6500E", 
