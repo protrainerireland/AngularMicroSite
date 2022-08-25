@@ -120,7 +120,7 @@ module.exports = function(config) {
                     id: instance.id , 
                     ...getInstanceDateInfo(instance.date, course.durationDays), 
                     eventStatus: "https://schema.org/EventScheduled", 
-                    eventAttendanceMode: `https://schema.org/${instance.location == 'Online' ? "OnlineEventAttendanceMode" : "OfflineEventAttendanceMode"}`;
+                    eventAttendanceMode: `https://schema.org/${instance.location == 'Online' ? "OnlineEventAttendanceMode" : "OfflineEventAttendanceMode"}`,
                     offers: {
                         "@type": "Offer", 
                         "url":`https://professional.ie/course_schedule/${filename}.html?id=${instance.id}`, 
