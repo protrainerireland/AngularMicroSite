@@ -56,7 +56,9 @@
             "image": "", 
             "imagePosition": "right",
             "content":{
-                "title": "Why attend one of our Angular courses?"
+                "title": "Why attend one of our Angular courses?", 
+                "list":[], 
+                "text": ""
             }
         },
         {
