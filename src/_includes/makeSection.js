@@ -166,7 +166,10 @@ module.exports = {
                                 data-aos="fade-right" ${ animationDelay }  ${animationOffset}
                                 data-aos-anchor="#${section.id}"
                                 >
-                                    <img src="${ section.image }" class="img-fluid" alt="">
+                                    <img src="${ section.image }" 
+                                        ${section.imageWidth ? 'width=\"' :''} 
+                                        ${section.imageWidth ? '' + section.imageWidth + '\"':''}   
+                                        class="img-fluid" alt="">                                 
                                 </div>`;
                     }    
 
@@ -213,7 +216,11 @@ module.exports = {
                                 data-aos="fade-right" ${ animationDelay }  ${animationOffset}
                                 data-aos-anchor="#${section.id}"
                         >
-                                    <img src="${ section.image }" class="img-fluid" alt="">
+                                
+                        <img src="${ section.image }" 
+                            ${section.imageWidth ? 'width=\"' :''} 
+                            ${section.imageWidth ? '' + section.imageWidth + '\"':''}
+                            class="img-fluid" alt="">
                                 </div>`;
                     }    
     
