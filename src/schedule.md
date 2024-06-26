@@ -1,7 +1,7 @@
 ---
 layout: schedule_layout
 title: Schedule
-type: schedule
+description: Training Course Schedule
 tags: [ main ]
 page:
     type: schedule
