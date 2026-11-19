@@ -1,6 +1,9 @@
 {
     "searchKeywords": ["Angular"],
     "searchLocations": ["Dublin", "Cork", "Limerick", "Ireland"],
+    "featuredGroups": [
+        "Angular"
+    ],
     "homepageTitle": "Training Courses - Dublin Cork Limerick Ireland", 
     "organisation": {
         "name": "Professional Training Solutions Ltd" , 
